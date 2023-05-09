@@ -12,7 +12,7 @@ This document seeks to propose an API for web pages to perform FLEDGE auctions u
 
 To execute an on-server FLEDGE auction, sellers begin by calling `navigator.startServerAdAuction()`:
 ```  
-const auctionBlob = navigator.startServerAdAuction({
+const auctionBlob = await navigator.startServerAdAuction({
   // ‘seller’ works the same as for runAdAuction.
   'seller': 'https://www.example-ssp.com',
 });
